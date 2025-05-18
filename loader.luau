@@ -7,6 +7,7 @@ local Player = Players.LocalPlayer;
 
 local ScriptID = ({
     [7018190066] = "310e37c829f002bedf76a1213590a4f3", --// Dead Rails
+    [3808081382] = "72658b362cb91f830bb5450f954fba35", --// TSB
 })[game.GameId];
 
 if not ScriptID then
