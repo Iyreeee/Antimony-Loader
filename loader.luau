@@ -85,7 +85,7 @@ Row:Button({
 Window:Button({
 	Text = "Any issues? Join our discord!",
 	Callback = function()
-        setclipboard("https://discord.gg/Akf9nbev");
+        setclipboard("https://discord.gg/HezQqF8Eu8");
         Notify("NOTIFICATION", "invite link copied!", 5);
 	end,
 });
