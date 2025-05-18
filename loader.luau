@@ -36,7 +36,7 @@ end
 
 local Window = ReGui:Window({
 	Title = "Antimony | Key System",
-	Size = UDim2.fromOffset(240, 120)
+	Size = UDim2.fromOffset(280, 150)
 }):Center();
 
 local KeyInput = Window:InputText({
@@ -79,5 +79,13 @@ Row:Button({
 	Callback = function()
         setclipboard("https://ads.luarmor.net/get_key?for=Antimony_Lootlabs-ulvowoAItxRF")
         Notify("NOTIFICATION", "Key System link copied!", 5)
+	end,
+});
+
+Window:Button({
+	Text = "Any issues? Join our discord!",
+	Callback = function()
+        setclipboard("https://discord.gg/Akf9nbev");
+        Notify("NOTIFICATION", "invite link copied!", 5);
 	end,
 });
