@@ -48,15 +48,8 @@ local KeyInput = Window:InputText({
 Window:Button({
 	Text = "       Submit Key      ",
 	Callback = function()
-        local Key = KeyInput.Value;
-        if Key == "" or #Key < 10 then
-            return Notify("FAILED", "Invalid Key", 5)
-        end
-
-        Window:Remove()
-
-        script_key=Key;
-        loadstring(game:HttpGet(`https://api.luarmor.net/files/v3/loaders/{ScriptID}.lua`))();
+        setclipboard("https://discord.gg/HezQqF8Eu8");
+        Notify("NOTIFICATION", "Server link copied, get the script from #get-script", 10);
 	end,
 });
 
