@@ -49,7 +49,7 @@ Window:Button({
 	Text = "       Submit Key      ",
 	Callback = function()
         setclipboard("https://discord.gg/HezQqF8Eu8");
-        Notify("NOTIFICATION", "Server link copied, get the script from #get-script", 10);
+        Notify("NOTIFICATION", "redeem your key from #get-script, then click get script in the panel", 10);
 	end,
 });
 
