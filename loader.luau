@@ -1,5 +1,5 @@
 local cloneref = cloneref or function(...)
-  return ...
+	return ...
 end
 
 local Players = cloneref(game:GetService("Players"));
@@ -34,29 +34,21 @@ local function Notify(Title, Text, Duration)
 	})
 end
 
-local Window = ReGui:Window({
-	Title = "Antimony | Key System",
-	Size = UDim2.fromOffset(280, 150)
-}):Center();
+local Window = ReGui:PopupModal({
+	Title = "Antimony",
+	NoClose = true,
+})
 
-local KeyInput = Window:InputText({
-    Placeholder = "Enter your key...",
-    Label = "",
-    Value = "",
+Window:Label({
+	Text = "Server link has been copied, go to #get-script to get a key,\nthen redeem your key and click get script and execute the script you get."
 });
 
 Window:Button({
-	Text = "       Submit Key      ",
+	Text = "Close",
 	Callback = function()
-        setclipboard("https://discord.gg/HezQqF8Eu8");
-        Notify("NOTIFICATION", "redeem your key from #get-script, then click get script in the panel", 10);
-	end,
+		Window:ClosePopup();
+	end
 });
 
-Window:Button({
-	Text = "        Get Key        ",
-	Callback = function()
-        setclipboard("https://discord.gg/HezQqF8Eu8");
-        Notify("NOTIFICATION", "Server link copied!", 10);
-	end,
-});
+setclipboard("https://discord.gg/HezQqF8Eu8");
+Notify("NOTIFICATION", "Server link copied!", 20);
