@@ -8,6 +8,7 @@ local Player = Players.LocalPlayer;
 local ScriptID = ({
     [7018190066] = "310e37c829f002bedf76a1213590a4f3", --// Dead Rails
     [3808081382] = "72658b362cb91f830bb5450f954fba35", --// TSB
+    [6331902150] = "f6d5d5608e9c8d461c56136ab48730b4", --// Forsaken
 })[game.GameId];
 
 if not ScriptID then
@@ -40,7 +41,7 @@ local Window = ReGui:PopupModal({
 })
 
 Window:Label({
-	Text = "Server link has been copied, go to #get-script to get a key,\nthen redeem your key and click get script and execute the script you get."
+	Text = "Server link has been copied, go to #get-script to get a key,\nthen redeem your key and click get script\nthen execute the script you get."
 });
 
 Window:Button({
