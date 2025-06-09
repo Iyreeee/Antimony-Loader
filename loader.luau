@@ -6,9 +6,9 @@ local Players = cloneref(game:GetService("Players"));
 local Player = Players.LocalPlayer;
 
 local ScriptID = ({
-    [7018190066] = "310e37c829f002bedf76a1213590a4f3", --// Dead Rails
     [3808081382] = "72658b362cb91f830bb5450f954fba35", --// TSB
     [6331902150] = "f6d5d5608e9c8d461c56136ab48730b4", --// Forsaken
+    [994732206] = "f1027cdbaecbe58bd4e398da24ac00fe", --// Blox Fruits
 })[game.GameId];
 
 if not ScriptID then
